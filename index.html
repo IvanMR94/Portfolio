@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio">Web Developer</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </header>
+    </div>
+
+    <main>
+        <!--Seccion Inicio-->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <video autoplay muted loop plays-inline class="back-video">
+                        <source src="/video/codeando.mp4" type="video/mp4">
+                    </video>
+                    <img src="/img/yo.png" alt="FotoIvan">
+                    <h1>Ivan Moreno</h1>
+                    <h2>Desarrollador Web</h2>
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/ivanmorenodev/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/Iv4nMr"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ivanmoreno_coach/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Criv.IM"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://github.com/IvanMR94"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion Sobre Mi-->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mi</h2>
+                <p><span>¡Hola me llamo Ivan Moreno! </span>, estoy estudiando para obtener la Tecnicatura Superior en
+                    Desarrollo Web y tambien la Tecnicatura en Ciencias de Datos e Inteligencia Artificial en el
+                    Instituto
+                    Superior Politecnico de Cordoba Capital en Argentina. Espero graduarme a finales del 2023. Soy una
+                    persona con formacion universitaria con un carácter cordial y amable. Actualmente trabajo
+                    fuera
+                    del area de tecnologia, pero estoy en busca de nuevas oportunidades. Como docente adquirí mucha
+                    paciencia y me ayudó a mejorar mi capacidad de resolución de conflictos. ¡Me siento preparado para
+                    asumir nuevos retos!</p>
+
+                <div class="fila">
+                    <!--Datos Personales-->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                14-01-1994
+                            </li>
+                            <li>
+                                <strong>Telefono</strong>
+                                +54 (3549) 506962
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                iv4n.m0reno@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Intereses-->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="intereses">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>MUSICA</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>VIAJAR</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <span>ENTRENAR</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-book"></i>
+                                <span>LIBROS</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <a href="https://drive.google.com/file/d/15rGgKjbLP2amO34ofnEwVoBAwlDZZzDk/view?usp=sharing"
+                    target="_blank">
+                    <button>
+                        Descargar CV <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <!--Seccion Skills-->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <!--Tecnologias-->
+                    <div class="col">
+                        <h3>Technical Skills</h3>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>JAVA</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Wordpress</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>MySQL</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Git-GitHub</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Boostrap</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Skills Profesionales-->
+                    <div class="col">
+                        <h3>Professional Skills</h3>
+                        <div class="skill">
+                            <span>Comunicacion</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Trabajo en equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Creatividad</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Dedicacion</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Actitud positiva</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Aprendizaje constante</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Adaptabilidad al cambio</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Integridad</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion Curriculum-->
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+
+                        <div class="item izq">
+                            <h4>Tec. Superior en Desarrollo Web y Aplicaciones Digitales</h4>
+                            <span class="casa">Instituto Superior Politecnico Cordoba</span>
+                            <span class="fecha">2022 - En curso</span>
+                            <p>Diseñar, construir, programar e implementar aplicaciones para la Web con criterios de
+                                calidad
+                                y seguridad;
+                                Integrar las técnicas de trabajo, la información, la producción de códigos y
+                                reutilización
+                                de códigos existentes;
+                                Desarrollar sitios web dinámicos con interacción con base de datos en servidores, y
+                                consumir
+                                servicios;
+                                Producir documentación técnica de los procesos y productos desarrollados de acuerdo con
+                                los
+                                requerimientos funcionales y técnicos recibidos;
+                                Planificar el proyecto en un contexto de desarrollo en equipo
+                                Desarrollar aplicaciones móviles multiplataforma.</p>
+                            <div class="conectori">
+                                <div class="circuloi">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item izq">
+                            <h4>Tec. Superior en Ciencias de Datos e Inteligencia Artificial</h4>
+                            <span class="casa">Instituto Superior Politecnico Cordoba</span>
+                            <span class="fecha">2022 - En curso</span>
+                            <p>Diseñar, desarrollar e implementar técnicas de Machine Learning para su utilización
+                                aplicada
+                                a través de modelos predictivos, sistemas de recomendación, entre otras. Construir redes
+                                neuronales y liderar exitosamente proyectos de Machine Learning que permitan implementar
+                                visión por computadora y aplicarlas a datos de imágenes. Utilizar herramientas de
+                                ciberseguridad considerando tanto las posibilidades de ataque como de errores en los
+                                requerimientos, la implementación o el despliegue, así como tener en cuenta la
+                                confidencialidad de los datos suministrados por el usuario.</p>
+                            <div class="conectori">
+                                <div class="circuloi">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item izq">
+                            <h4>Oracle Next Education - Full Stack</h4>
+                            <span class="casa">Oracle en conjunto con Alura Latam</span>
+                            <span class="fecha">2022</span>
+                            <p>Adquirí habilidades técnicas y conductuales para actuar como Jr. Developer, para crear y
+                                mejorar sitios web, software y aplicaciones. La formación involucró rutas de
+                                aprendizajes
+                                en: Lógica de programacion, Front-end, Back-end y Emprendimiento.</p>
+                            <div class="conectori">
+                                <div class="circuloi">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col derecha">
+                        <h3>Experiencia de trabajo</h3>
+
+                        <div class="item der">
+                            <h4>Profesor de Educación Física</h4>
+                            <span class="casa">Autonomo</span>
+                            <span class="fecha">2012 - 2022</span>
+                            <p>Como Profesor de Educación Física me dediqué al dictado de sesiones entrenamiento
+                                personalizado para la salud y la estética corporal. Tambien me dediqué al dictado de
+                                formaciones espeficias al campo del entrenamiento, en formato presencial y virtual. </p>
+                            <div class="conectord">
+                                <div class="circulod">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item der">
+                            <h4>Reparación y mantenimiento de Computadoras</h4>
+                            <span class="casa">Autonomo</span>
+                            <span class="fecha">2011 - 2022</span>
+                            <p>Me encargo de solucionar problemas de configuración, o de mal funcionamiento del sistema
+                                operativo. Tembien de instalar y configurar tanto de un sistema operativo como de sus
+                                drivers. Erradicar virus informaticos. Armar una computadora y dejarla funcional,
+                                tambien de
+                                detectar los componentes que esten en mal funcionamiento y reemplazarlos.</p>
+                            <div class="conectord">
+                                <div class="circulod">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item der">
+                            <h4>Call Center</h4>
+                            <span class="casa">Atencion al cliente y venta telefonica</span>
+                            <span class="fecha">2018</span>
+                            <p>Trabajé en dos empresas en el area de atención al cliente y venta de portabilidad
+                                numerica.
+                                Mi trabajo consistia en aumentar las ventas, captar nuevos clientes, brindar servicio
+                                personalizado al cliente, optimizar los recursos de la empresa, responder a las dudas y
+                                asistir al cliente con la informacion que necesite, pero sobretodo retener a los
+                                clientes.
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion Proyectos-->
+        <section id="proyectos" class="proyectos">
+            <div class="contenido-seccion">
+                <h2>Proyectos</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <a href="https://pulpoi.github.io/proyecto-integrador-ISPC/Vistas/index.html">
+                            <img src="/img/gymApp.jpg" alt="Gym App">
+                            <div class="overlay">
+                                <h3>Gym App</h3>
+                                <p>App de gimnasio</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proyecto">
+                        <a href="https://ivanmr94.github.io/Encriptador/">
+                            <img src="/img/encriptador.png" alt="Encriptador">
+                            <div class="overlay">
+                                <h3>Encriptador</h3>
+                                <p>Encriptado y desencriptado de texto</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proyecto">
+                        <img src="/img/portafolio.jpg" alt="Mi Portfolio">
+                        <div class="overlay">
+                            <h3>Portfolio</h3>
+                            <p>Portfolio personal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion Contacto-->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <!--formulario-->
+                    <div class="col">
+                        <form  id="contacto-form" class="needs-validation" action="#" novalidate>
+                            <div class="container-mensaje">
+                            <input type="text" class="form-control" id="firstnameId" name="firstname"  minlength="3" maxlength="30" required placeholder="Tu nombre">
+                            <div class="valid-feedback">
+                                ¡Excelente!
+                            </div>
+                            <div class="invalid-feedback">
+                                  Tu nombre es requerido.
+                            </div>  
+                            
+                            </div>
+                            <div class="container-mensaje">
+                            <input type="tel" class="form-control" id="phoneNumberId" minlength="7" maxlength="15"  pattern="^[0-9]+$" placeholder="Numero de telefono" required>
+                            <div class="valid-feedback">
+                                ¡Excelente!
+                            </div>
+                            <div class="invalid-feedback">
+                                  Tu telefono es requerido.
+                            </div>  
+                            
+                            </div>
+                            <div class="container-mensaje">
+                            <input type="email" class="form-control" id="emailId" required placeholder="Direccion de correo">
+                            <div class="valid-feedback">
+                                ¡Excelente!
+                            </div>
+                            <div class="invalid-feedback">
+                                  Tu email es requerido.
+                            </div>  
+                            
+                            </div>
+                            <div class="container-mensaje">
+                            <input type="text" name="text" class="form-control" id="validationCustom03" required placeholder="Tema">
+                            <div class="valid-feedback">
+                                ¡Excelente!
+                            </div>
+                            <div class="invalid-feedback">
+                                  Es necesario mencionar el tema.
+                            </div>  
+                           
+                            </div>
+                            <div class="container-mensaje">
+                            <textarea class="form-control" id="messageInputId"  minlength="5" cols="30" rows="10" required  placeholder="Mensaje"></textarea>
+                            <div class="valid-feedback">
+                                ¡Excelente!
+                            </div>
+                            <div class="invalid-feedback">
+                                 Es necesario escribir un mensaje.
+                            </div>  
+                            
+                            </div>
+                            <div>                            
+                            <button id="submit" type="submit" >
+                                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                                <span class="overlay"></span>
+                            </button>
+                             </div>
+
+                        </form>
+                    </div>
+                    <!--Mapa-->
+                    <div class="col">
+                        <div class="mapa-contenido">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.7929460983!2d-64.1903708851319!3d-31.419830303561906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping!5e0!3m2!1sen!2sar!4v1670209984431!5m2!1sen!2sar"
+                                width="600" height="400" style="border:0;width: 600px;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Cordoba Capital - Argentina
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Telefono: +54 3549 506962
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: iv4n.m0reno@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/ivanmorenodev/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/Iv4nMr" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ivanmoreno_coach/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Criv.IM" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/IvanMR94" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <div class="copyr">
+                <p>Copyright <i class="fa-regular fa-copyright"></i><strong> | Coded with <i
+                            class="fa-solid fa-heart"></i>
+                        by <a href="#" target="_blank">Ivan Moreno</a></strong></p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+    <!--Boostrap Js-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
