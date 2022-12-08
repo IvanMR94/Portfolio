@@ -118,15 +118,16 @@ a:visited{
     align-items: center;
 }
 
-.back-video{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%vh;
-    
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(/img/fondoInicio.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
 }
+
 
 .inicio .contenido-banner{
     padding: 20px;
@@ -995,10 +996,6 @@ footer .copyr a:hover{
         padding: 10px 0;
     }
 
-    .back-video{
-        width: auto;
-        height: 100%;
-    }
     .mapa-contenido{
         width: 100%;
     }
@@ -1022,10 +1019,6 @@ footer .copyr a:hover{
         width: fit-content;
     }
 
-    .back-video{
-        width: auto;
-        height: 100%;
-    }
 
     .skills .fila{
         display: block;
