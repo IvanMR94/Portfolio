@@ -157,11 +157,11 @@ a:visited{
 }
 
 .showcase-row-image img {
-	height: 500px;
+	height: 450px;
     margin-top: 40px;
     border: 10px solid #EB9341;
     display: block;
-    width: 500px;
+    width: 450px;
     margin: auto;
     border-radius: 100%;
 }
