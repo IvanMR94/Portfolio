@@ -1036,6 +1036,11 @@ footer .copyr a:hover{
         border-radius: 100%;
     }
 
+    .redes a{
+        font-size: 25px;
+        
+    }
+
 
 
     .sobremi{
@@ -1101,4 +1106,5 @@ footer .copyr a:hover{
     .mapa-contenido{
         width: 100%;
     }
+
 }
